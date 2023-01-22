@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import HeroImage from './HeroImage';
 import MainBody from './MainBody';
 import Footer from './Footer';
+import MiddleOfThePage from './MiddleOfThePage';
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
       
       <NavBar/>
       <HeroImage/>
+      <MiddleOfThePage/>
       <MainBody/>
       <Footer/>
     </div>

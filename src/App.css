@@ -91,6 +91,9 @@ font-style: oblique;
 text-align: center;
     }
 
+
+
+
     .card .Persona5{
       margin: 1rem;
       font-style: oblique;
@@ -116,6 +119,8 @@ text-align: center;
       display: flex;
       justify-content: start;
   align-items: center;
+
+
     }
 
     .card #meme{
@@ -191,7 +196,8 @@ text-align: center;
 .card{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 16px
+  grid-gap: 16px;
+
 }
 
 .card :hover{
@@ -295,3 +301,23 @@ align-items: center;
   color: #310041;
   /* transition: 1s; */
 }
+
+.midPage{
+
+
+  background-color: #8901B6;
+  padding: 1rem;
+ margin-left: auto;
+margin-right: auto;
+/* width: 15em; */
+color: antiquewhite;
+
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 100px;
+  justify-content:space-around;
+
+  border-bottom: #8901B6;
+  
+}
+
