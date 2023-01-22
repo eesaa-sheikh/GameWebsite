@@ -1,38 +1,287 @@
-.App {
-  text-align: center;
+
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background: linear-gradient(109.6deg, rgb(116, 0, 218) 11.2%, rgb(217, 35, 189) 91.1%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
+  background: linear-gradient(109.6deg, rgb(116, 0, 218) 11.2%, rgb(217, 35, 189) 91.1%);
+  color: antiquewhite;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2rem;
+  padding: 0 1rem;
+  box-shadow: 2cm;
 }
 
-.App-link {
-  color: #61dafb;
+
+.nav ul{
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ .nav li:hover{
+ color: rgb(131, 1, 252);
+ transition: 1s;
+ }
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+
+  align-items: center;
+  padding: .25rem;
 }
+
+.purple{
+    background-color: blueviolet;
+  }
+
+  .CherryBlossom{
+
+/* 
+    opacity: 80%;
+
+    filter:grayscale(10%) */
+    filter: blur(5px);
+    filter: brightness(0.2);
+    filter: contrast(150%);
+    filter: drop-shadow(16px 16px 20px rgb(255, 0, 221));
+    filter: grayscale(50%);
+    filter: hue-rotate(90deg);
+    filter: invert(50%);
+    filter: opacity(25%);
+    filter: saturate(30%);
+    filter: sepia(60%);
+  }
+
+  .CherryBlossom{
+    color: antiquewhite;
+    background-image: url("https://preview.redd.it/y5q5gge66zd51.jpg?auto=webp&s=7432de0821ddbcec33ddf524a28ca6c497990ae7") ;
+    /* max-width: 200rem; */
+    padding: 20rem;
+  }
+
+  .textHero{
+
+    font-style: oblique;
+    align-items: flex-start;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 500px;
+
+    background-color: rgb(0, 0, 0, 60%);
+
+  }
+  
+  .MainBody h2{
+color: antiquewhite;
+font-style: oblique;
+text-align: center;
+    }
+
+    .card .Persona5{
+      margin: 1rem;
+      font-style: oblique;
+      margin-bottom: 1rem;
+      color: antiquewhite;
+      font-size: smaller;
+      padding: 1rem;
+      border-radius: 20px;
+      width: 500px;
+
+      background: #8901B6;
+      background: -webkit-linear-gradient(top right, #8901B6, #FF01F8);
+      background: -moz-linear-gradient(top right, #8901B6, #FF01F8);
+      background: linear-gradient(to bottom left, #8901B6, #FF01F8);
+      
+      border-width: 20rem;
+      border: 3px solid rgb(187, 116, 235);
+      box-shadow: 30rem;
+
+      /* display: flex;
+      align-items:flex-start */
+
+      display: flex;
+      justify-content: start;
+  align-items: center;
+    }
+
+    .card #meme{
+      padding: 0.5em;
+      border-radius: 15%;
+     align-items: center;
+    }
+
+
+
+    .GodOfWar{
+      margin: 1rem;
+      font-style: oblique;
+      margin-bottom: 1rem;
+      color: antiquewhite;
+      font-size: smaller;
+      padding: 1rem;
+      border-radius: 20px;
+      width: 500px;
+
+      background: #8901B6;
+      background: -webkit-linear-gradient(top right, #8901B6, #FF01F8);
+      background: -moz-linear-gradient(top right, #8901B6, #FF01F8);
+      background: linear-gradient(to bottom left, #8901B6, #FF01F8);
+      
+      border-width: 20rem;
+      border: 3px solid rgb(187, 116, 235);
+      box-shadow: 30rem;
+
+      display: flex;
+      justify-content: start;
+  align-items: center;
+
+    }
+
+    .card .SpiderManPS4{
+      margin: 1rem;
+      font-style: oblique;
+      margin-bottom: 1rem;
+      color: antiquewhite;
+      font-size: smaller;
+      padding: 1rem;
+      border-radius: 20px;
+      width: 500px;
+
+      background: #8901B6;
+      background: -webkit-linear-gradient(top right, #8901B6, #FF01F8);
+      background: -moz-linear-gradient(top right, #8901B6, #FF01F8);
+      background: linear-gradient(to bottom left, #8901B6, #FF01F8);
+      
+      border-width: 20rem;
+      border: 3px solid rgb(187, 116, 235);
+      box-shadow: 30rem;
+
+      display: flex;
+      justify-content:space-between;
+  align-items: center;
+
+    }
+
+    #Persona5, #SpiderManPS4, #OfWar{
+      padding: 0.5rem;
+      border-radius: 10%;
+  
+    }
+
+    /* .card #meme{
+      padding: 0.5em;
+      border-radius: 15%;
+     align-items: center;
+    } */
+  
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px
+}
+
+.card :hover{
+
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.Pbutton{
+
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: rgb(150, 0, 140) ;
+  color: antiquewhite;
+  font-style:inherit;
+  border-radius: 6px;
+  border: none;
+
+
+}
+
+.hello{
+  padding: 5rem;
+  align-items: center;
+  color: antiquewhite;
+  background-image: url("https://rare-gallery.com/mocahbig/421364-artwork-fantasy-art-waterfall-cherry-blossom-architecture.jpg" );
+/*   
+background: #5B00BC;
+background: -webkit-linear-gradient(top left, #5B00BC, #8E3DD1);
+background: -moz-linear-gradient(top left, #5B00BC, #8E3DD1);
+background: linear-gradient(to bottom right, #5B00BC, #8E3DD1); */
+}
+
+.emailTab, .nameTab{
+
+  background-color:antiquewhite;
+}
+
+.emailTab{
+margin-left: 1rem;
+size: 2rem;
+}
+
+.submit{
+  margin-left: 1rem;
+  background-color: #ff89fb;
+}
+
+.submit:hover{
+
+  background-color: rgb(247, 5, 199);
+  transform: scale(1.1);
+  transition: 1s;
+
+
+}
+
+.filter{
+
+  margin: 1rem;
+  font-style: oblique;
+  margin-bottom: 1rem;
+  color: antiquewhite;
+  font-size: smaller;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 75px;
+
+  background: #8901B6;
+  background: -webkit-linear-gradient(top right, #8901B6, #FF01F8);
+  background: -moz-linear-gradient(top right, #8901B6, #d97ffa);
+  background: linear-gradient(to bottom left, #8901B6, #FF01F8);
+  
+  border-width: 10rem;
+  border: 3px solid rgb(187, 116, 235);
+  box-shadow: 30rem;
+
+  /* display: flex;
+  align-items:flex-start */
+
+  display: flex;
+  justify-content: start;
+align-items: center;
+ 
+}
+
+.filter:hover{
+
+  background-color: rgb(255, 132, 0);
+  transform: scale(1.1);
+  transition: 1s;
+}
+
