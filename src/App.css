@@ -285,3 +285,13 @@ align-items: center;
   transition: 1s;
 }
 
+.oval{
+  color: #8901B6;
+   background-color:#E6E6FA;
+  border-radius: 20px;
+}
+.oval:hover{
+  background-color:#e8bdf8;
+  color: #310041;
+  /* transition: 1s; */
+}
